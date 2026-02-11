@@ -2,7 +2,7 @@ import { FaPhoneAlt, FaCalendarCheck } from "react-icons/fa";
 
 const GetInTouch = () => {
   return (
-    <section className="bg-[#f4f8fb] py-14 px-5">
+    <section id="contact" className="bg-[#f4f8fb] py-14 px-5">
       <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8 text-center">
 
         {/* Tag */}
@@ -32,14 +32,15 @@ const GetInTouch = () => {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <a
-          href="#"
+        {/* CTA Button FIXED */}
+        <button
+          onClick={() => alert("Consultation request coming soon")}
           className="inline-flex items-center gap-2 bg-[#1f9d55] text-white text-sm px-7 py-3 rounded-md font-semibold shadow-md transition hover:bg-[#178144] hover:scale-105"
         >
           <FaCalendarCheck />
           Request Free Consultation
-        </a>
+        </button>
+
       </div>
     </section>
   );
