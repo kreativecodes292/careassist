@@ -10,26 +10,44 @@ const FooterTop = () => {
 
         {/* Left Logos */}
         <div className="flex flex-col sm:flex-row items-center">
-          <img src={f1} alt="Trustpilot" className="h-22 sm:h-20 object-contain" />
-          <img src={f2} alt="Homecare" className="h-22 sm:h-20 object-contain" />
+          <img
+            src={f1}
+            alt="Trustpilot"
+            className="h-22 sm:h-20 object-contain"
+          />
+          <img
+            src={f2}
+            alt="Homecare"
+            className="h-22 sm:h-20 object-contain"
+          />
         </div>
 
         {/* Right Social + Image */}
         <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-4">
           <div className="flex gap-2 sm:gap-4">
+
+            {/* Facebook */}
             <a
-              href="#"
-              className=" w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-gray-100 transition"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-gray-100 transition"
             >
               <FaFacebookF size={14} />
             </a>
 
+            {/* LinkedIn */}
             <a
-              href="#"
-              className=" w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-gray-100 transition"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-gray-100 transition"
             >
               <FaLinkedinIn size={14} />
             </a>
+
           </div>
 
           <img
