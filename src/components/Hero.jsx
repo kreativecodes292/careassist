@@ -2,8 +2,11 @@ import hm from "../assets/hh1.png";
 import { FaHome } from "react-icons/fa";
 import { MdOutlineSupport } from "react-icons/md";
 import { FaBed } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
+  const navigate = useNavigate();
+
   return (
     <>
       {/* HERO SECTION */}
@@ -27,11 +30,17 @@ export default function Hero() {
 
             {/* BUTTONS */}
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <button className="bg-[#4CAF50] hover:bg-green-600 transition px-7 py-3 rounded-md font-semibold shadow-lg">
+              <button
+                onClick={() => navigate("/contact")}
+                className="bg-[#4CAF50] hover:bg-green-600 transition px-7 py-3 rounded-md font-semibold shadow-lg"
+              >
                 Get a Free Consultation
               </button>
 
-              <button className="border border-white/80 hover:bg-white hover:text-[#0B4F6C] transition px-7 py-3 rounded-md font-medium">
+              <button
+                onClick={() => navigate("/services")}
+                className="border border-white/80 hover:bg-white hover:text-[#0B4F6C] transition px-7 py-3 rounded-md font-medium"
+              >
                 Learn More
               </button>
             </div>
@@ -42,7 +51,6 @@ export default function Hero() {
             className="flex-1 h-full md:h-full bg-cover bg-center mt-6 md:mt-0"
             style={{ backgroundImage: `url(${hm})` }}
           ></div>
-
         </div>
       </section>
 
@@ -51,7 +59,10 @@ export default function Hero() {
         <div className="max-w-9xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
 
           {/* CARD 1 */}
-          <div className="bg-white rounded-lg shadow-sm border hover:shadow-md transition cursor-pointer">
+          <div
+            onClick={() => navigate("/services")}
+            className="bg-white rounded-lg shadow-sm border hover:shadow-md transition cursor-pointer"
+          >
             <div className="flex items-center gap-3 bg-[#0B4F6C] text-white p-4 rounded-t-lg">
               <FaHome size={22} />
               <h3 className="text-lg font-semibold">Home Care</h3>
@@ -59,11 +70,14 @@ export default function Hero() {
             <div className="p-4 text-gray-600 text-sm">
               Personalized care visits to assist with daily tasks.
             </div>
-            <div className="p-1 text-right text-gray-400">➜</div>
+            <div className="p-4 text-right text-gray-400">➜</div>
           </div>
 
           {/* CARD 2 */}
-          <div className="bg-white rounded-lg shadow-sm border hover:shadow-md transition cursor-pointer">
+          <div
+            onClick={() => navigate("/services")}
+            className="bg-white rounded-lg shadow-sm border hover:shadow-md transition cursor-pointer"
+          >
             <div className="flex items-center gap-3 bg-[#1CA89B] text-white p-4 rounded-t-lg">
               <MdOutlineSupport size={24} />
               <h3 className="text-lg font-semibold">Supported Living</h3>
@@ -75,7 +89,10 @@ export default function Hero() {
           </div>
 
           {/* CARD 3 */}
-          <div className="bg-white rounded-lg shadow-sm border hover:shadow-md transition cursor-pointer">
+          <div
+            onClick={() => navigate("/services")}
+            className="bg-white rounded-lg shadow-sm border hover:shadow-md transition cursor-pointer"
+          >
             <div className="flex items-center gap-3 bg-[#0B4F6C] text-white p-4 rounded-t-lg">
               <FaBed size={22} />
               <h3 className="text-lg font-semibold">Live-In Care</h3>
