@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import FooterTop from "./components/FooterTop";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
+import Contact from "./pages/contact";
 
 const Layout = () => {
   return (
@@ -15,6 +16,8 @@ const Layout = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
           {/* Add more pages as needed */}
         </Routes>
       </div>
