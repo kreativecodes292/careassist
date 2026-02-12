@@ -65,15 +65,15 @@ export default function Services() {
 
   return (
     <div className="w-full bg-[#F5F7FA] overflow-hidden">
+
       {/* ================= HERO SECTION ================= */}
       <section className="relative w-full bg-gradient-to-r from-[#0B4F6C] via-[#0e5f80] to-[#20B2AA] text-white py-20 sm:py-24 md:py-32 px-6 md:px-12">
-        
-        {/* Decorative blur circles */}
+
         <div className="absolute -top-16 -right-16 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-0 left-0 w-60 h-60 bg-white/5 rounded-full blur-2xl"></div>
 
         <div className="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-          
+
           {/* Image */}
           <div className="relative w-full order-1 md:order-2">
             <img
@@ -81,7 +81,6 @@ export default function Services() {
               alt="Care Service"
               className="w-full h-64 sm:h-80 md:h-auto object-cover rounded-2xl shadow-2xl"
             />
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-white/10 rounded-full blur-xl animate-pulse"></div>
           </div>
 
           {/* Text */}
@@ -97,6 +96,8 @@ export default function Services() {
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              
+              {/* Contact Button */}
               <button
                 onClick={() => navigate("/contact")}
                 className="bg-[#4CAF50] hover:bg-green-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1"
@@ -104,12 +105,14 @@ export default function Services() {
                 Get Consultation
               </button>
 
+              {/* Services Page (optional change if needed) */}
               <button
-                onClick={() => navigate("/contact")}
+                onClick={() => navigate("/services")}
                 className="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#0B4F6C] transition-all duration-300"
               >
                 Learn More
               </button>
+
             </div>
           </div>
         </div>
