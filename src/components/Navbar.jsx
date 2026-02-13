@@ -10,6 +10,7 @@ export default function Navbar() {
     { label: "Home", to: "/" },
     { label: "Services", to: "/services" },
     { label: "Contact", to: "#contact" },
+    { label: "Why Us", to: "/trust-care" },
   ];
 
   const handleContactClick = () => {
