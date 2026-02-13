@@ -86,6 +86,7 @@ export default function Navbar() {
         <nav className="flex flex-col gap-4 px-6 py-4">
           <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+          <Link to="/trust-care" onClick={() => setMenuOpen(false)}>Why Us</Link>
 
           <a
             href="/#contact"
