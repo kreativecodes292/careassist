@@ -13,9 +13,9 @@ export default function Hero() {
 
           {/* LEFT SIDE */}
           <div className="flex-1 flex flex-col justify-center px-6 mt-10 py-8 md:py-0">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight">
+            <h1 className="text-2xl sm:text-2xl md:text-4xl font-extrabold leading-tight">
               Compassionate Home Care <br />
-              <span className="text-[#9FE0D1] text-lg sm:text-xl md:text-4xl">
+              <span className="text-[#9FE0D1] text-lg sm:text-xl md:text-3xl">
                 That Puts Your Loved Ones First
               </span>
             </h1>
